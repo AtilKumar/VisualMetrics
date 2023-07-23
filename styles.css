@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 85%;
+}
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(170, 170, 170, 0.6);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif; /*200, 300, 400, 500*/
+}
+.container{
+    width: 98vw;
+    height: 98vh;
+    /* max-width: 1400px; */
+    /* max-height: 1100px; */
+    background-color: white;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 5rem 1.2fr 2fr 1.2fr;
+    justify-items: center;
+    position: relative;
+}
+svg:hover{
+    cursor: pointer;
+    background-color: var(--char);
+    border-radius: 4px;
+    fill: white;
+}
+.home{
+    background-color: var(--char);
+    fill: white;
+    border-radius: 4px;
+}
+button{
+    cursor: pointer;
+}
+button:hover{
+    scale: 1.02;
+    transition: scale 200ms ease;
+}
+:root{
+    --char: #5352ed;
+    --char: #3535f3;
+    --faded-char: #5352ed80;
+}
+/* ____________________navigation bar________________________ */
+
+.navigation-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+.nav-section-one{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.nav-sub-section-one > img{
+    width: 2rem;
+}
+.nav-sub-section-one{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.nav-sub-section-two{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.nav-section-two{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+/* ________________________start-section______________________ */
+
+.start-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+
+    background-color: rgba(228, 228, 228, 0.3);
+    padding: 2rem 2.5rem;
+}
+
+/* ________________start-section-one */
+
+.start-section-one{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.start-section-one > img{
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.start-section-one > div > p:first-child{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.start-section-one > div > p:last-child{
+    opacity: 0.7;
+}
+
+/* ______________start-section-two */
+
+.start-section-two{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+}
+.start-section-two > p:first-child{
+    font-size: 1rem;
+}
+.start-section-two > div:first-of-type > span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.dim-para{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.m-dim-para{
+    display: none;
+}
+.sp{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.btn{
+    border-style: none;
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: var(--char);
+    border-radius: 0.5rem;
+}
+.m-btn{
+    border-style: none;
+    color: white;
+    padding: 0.8rem 1rem;
+    background-color: var(--char);
+    border-radius: 0.5rem;
+    display: none;
+}
+
+/* ____________________start section three */
+.start-section-three{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.start-section-three > p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.start-section-three > hr{
+    border: 1px solid rgba(228, 228, 228, 0.8);
+
+}
+.dark-para{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ______________________middle-section_____________________ */
+
+.middle-section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+
+    padding: 2rem 2.5rem;
+}
+
+/* __________________middle section one */
+.middle-section-one > p:first-child{
+    color: var(--char);
+    font-weight: 500;
+}
+.middle-section-one > p:last-child{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ___________________middle section two */
+.middle-section-two{
+    display: flex;
+    gap: 0.5rem;
+}
+.middle-section-two > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+    width: 10rem;
+}
+.middle-para{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.middle-section-two > div > hr{
+    border: 1px solid var(--faded-char);
+}
+
+/* ____________________middle section three */
+.middle-section-three{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.middle-section-three > p{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.legends{
+    display: flex;
+    justify-content: space-between;
+}
+.legend{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.legend1 > div{
+    width: 1rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(11, 11, 89);
+}
+.legend2 > div{
+    width: 1rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgb(83, 82, 237);
+}
+.legend3 > div{
+    width: 1rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: rgba(83, 82, 237, 0.5);
+}
+.middle-section-three > .m-graph-div{
+    display: none;
+}
+/* _________________middle section four */
+.middle-section-four{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.middle-section-four > p{
+    font-weight: 500;
+}
+
+/* _________________middle section five */
+.middle-section-five{
+    display: flex;
+    justify-content: space-between;
+}
+.middle-section-five > div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.middle-section-five > div:first-child > div{
+    display: flex;
+}
+.middle-section-five > div > hr{
+    border: 1px solid rgba(228, 228, 228, 0.8);
+}
+.circle-section{
+    display: flex;
+    flex-direction: column;
+}
+.circle-section > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.circle-section > div:first-of-type{
+    gap: 1rem;
+}
+.circle-section > div:nth-of-type(2) > div{
+    text-align: center;
+    width: 100%;
+}
+/* ______________________end section_______________________ */
+
+.end-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    gap: 2rem;
+
+    padding: 2rem 2.5rem;
+}
+
+/* _____________________end sectin one */
+.end-section-one{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    background-color: rgba(228, 228, 228, 0.3);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+}
+.end-section-one > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.end-section-one > div > h2{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.end-section-one > div > p:last-of-type{
+    text-align: center;
+    color: var(--char);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.end-section-one > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+.m-end-btn{
+    display: none;
+}
+
+/* ________________________end section two */
+.end-section-two{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    border-left: 2px solid var(--faded-char);
+}
+.end-section-two > p:first-child{
+    opacity: 0.7;
+    font-weight: 500;
+}
+.end-section-two > p:nth-child(2){
+    font-weight: 600;
+}
+.end-section-two > span{
+    color: var(--char);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* _________________________corner image styling */
+.corner{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+
+    width: 5rem;
+    border-radius: 0 0 1rem 0;
+}
+
+/* __________________________doughnut canva styling */
+.common-canva{
+    width: 6rem;
+    height: 6rem;
+}
+
+/* ___________________________input slider styling */
+.common-slider{
+    appearance: none;
+    background-color: var(--char);
+    border-radius: 4px;
+    width: 80%;
+    height: 4px;
+    cursor: pointer;
+    user-select: none;
+}
+button{
+    user-select: none;
+}
+img{
+    user-select: none;
+}
+.common-slider::-webkit-slider-thumb{
+    appearance: none;
+
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px gray;
+    background-color: white;
+}
+
+/* ========================================== */
+
+header{
+    display: none;
+}
+footer{
+    display: none;
+}
